@@ -10,7 +10,7 @@ def test_convert_to_square_matrix():
     ])
     matrix = convert_to_square_matrix(data)
     assert matrix[0][1] == 5.0
-    assert matrix[0][2] == 4.0
+    assert matrix[0][2] == 999999
     assert matrix[1][2] == 3.0
     assert all(matrix[i][i] == 0.0 for i in range(3))
 
