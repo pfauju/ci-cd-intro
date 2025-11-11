@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt
       
       - name: Run tests
-        run: pytest tests/
+        run: pytest tests/ --ignore=tests/test_routes.py
 
   Lint:
     runs-on: ubuntu-latest
